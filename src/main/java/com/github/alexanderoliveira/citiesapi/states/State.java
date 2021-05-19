@@ -27,4 +27,28 @@ public class State {
 
     public State() {
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public Integer getIbge() {
+        return ibge;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public List<Integer> getDdd() {
+        return ddd;
+    }
 }
