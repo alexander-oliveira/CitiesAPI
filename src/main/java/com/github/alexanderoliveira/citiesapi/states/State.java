@@ -1,12 +1,18 @@
 package com.github.alexanderoliveira.citiesapi.states;
 
 import com.github.alexanderoliveira.citiesapi.countries.Country;
-import org.hibernate.annotations.Table;
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+import org.hibernate.annotations.TypeDefs;
 import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "State")
 @Table(name = "estado")
+@TypeDefs({
+        @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
+})
 public class State {
 
     @Id
@@ -23,6 +29,9 @@ public class State {
     @JoinColumn(name = "pais", referencedColumnName = "id")
     private Country country;
 
+    @Type(type = "jsonb")
+    @Basic(fetch = FetchType.LAZY)
+    @Column(name = "ddd", columnDefinition = "jsonb")
     private List<Integer> ddd;
 
     public State() {
