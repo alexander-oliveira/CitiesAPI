@@ -1,6 +1,5 @@
-package com.github.alexanderoliveira.citiesapi;
+package com.github.alexanderoliveira.citiesapi.countries;
 
-import com.github.alexanderoliveira.citiesapi.countries.Country;
 import com.github.alexanderoliveira.citiesapi.countries.repository.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
