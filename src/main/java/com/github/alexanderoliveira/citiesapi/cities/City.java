@@ -26,4 +26,28 @@ public class City {
 
     public City() {
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getUf() {
+        return uf;
+    }
+
+    public Integer getIbge() {
+        return ibge;
+    }
+
+    public String getGeolocation() {
+        return geolocation;
+    }
+
+    public Point getLocation() {
+        return location;
+    }
 }
