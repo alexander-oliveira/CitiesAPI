@@ -27,6 +27,15 @@ public class City {
     public City() {
     }
 
+    public City(Long id, String name, Integer uf, Integer ibge, String geolocation, Point location) {
+        this.id = id;
+        this.name = name;
+        this.uf = uf;
+        this.ibge = ibge;
+        this.geolocation = geolocation;
+        this.location = location;
+    }
+
     public Long getId() {
         return id;
     }
