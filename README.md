@@ -1,7 +1,5 @@
 # Cities API
 
-
-[toc]
 Neste projeto, realizado em bootcamp da Digital Innovation One, a proposta é que seja implementado uma API Rest que possibilite consultar países, estados e cidades brasileiras além da possibilidade de calcular a distância entre duas referências.
 
 ## Requisitos
